@@ -97,4 +97,9 @@ Empirical verification confirms that off-chain decoupling delivers extreme secur
 | On-Chain Verification | 1.97 ms | **1.97 ms (Strict $O(1)$ Execution)** |
 | **Total Round-Trip Latency** | **4.13 ms** | **5.06 ms (Real-Time Compliant)** |
 
----
+---## 📄 License and Academic Citation
+
+This framework is developed as part of continuous doctoral research building upon the foundational 2021 Hybrid Access Control Model. 
+
+For inquiries regarding academic citation matrices or integration specifications for DORA/NIS 2 institutional environments, please contact the primary author.
+
