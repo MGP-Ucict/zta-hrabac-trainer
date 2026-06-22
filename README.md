@@ -39,7 +39,7 @@ The `AIZeroTrustAuth` middleware intercepts all incoming critical transactional 
 
 ### 2. Behavioral Scoring (Python Isolation Forest)
 Contextual feature vectors are parsed dynamically:
-\[C_v = [t_{\text{current}}, IP_{\text{numeric}}, \Delta t_{\text{inactivity}}]\]
+\[C_v = [time, IP, inactivity_period]\]
 The `Isolation Forest` model extracts the raw outlier distribution score, parsing it through an affine normalization function to generate an explicit `trustScore` mapping within the \([0, 100]\) spectrum:
 
 ```python
