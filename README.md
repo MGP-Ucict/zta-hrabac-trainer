@@ -32,7 +32,7 @@ The source matrix is divided into distinct operational scripts mapping onto the 
 * **Manuscript Reference:** Section V-A (Decoupled Off-Chain Web Layer Infrastructure).
 * **Functionality:** Implements the production-level `AIModelTrainer` class. It manages user behavioral telemetry profiling, automates background Isolation Forest clustering over a continuous 4-dimensional space, handles secure file-system serialization (`.pkl`), and calculates live contextual risk deductions.
 * **Feature Vector Layout (n=4 continuous metrics):** 
-  \[x = [x_{\text{time}}, x_{\text{ip}}, x_{\text{device}}, x_{\text{inactivity}}]\]
+  x = [x_{\text{time}}, x_{\text{ip}}, x_{\text{device}}, x_{\text{inactivity}}]
 
 ### 2. `benchmark_tables.py` (Empirical Evaluation Suite)
 * **Manuscript Reference:** Section V-B (Performance Verification & Ablation Analysis).
