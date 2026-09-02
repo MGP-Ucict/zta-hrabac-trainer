@@ -22,24 +22,16 @@ Install the necessary dependencies via `pip`:
 pip install numpy scikit-learn joblib
 ```
 
----
+## 📂 Repository Structure
+- **`trainer.py`**: Manages user behavioral telemetry and Isolation Forest clustering.
+- **`benchmarks.py`**: Generates synthetic banking logs.
+- **`accuracy.py`**: Evaluates standard classification matrices.
+- **`cross-validation-ablation.py`**: Executes evaluation loops across sliding historical window sizes.
+- **`comparison.py`**: Measures runtime ingestion latencies.
 
-## 📂 Repository Structure & Component Blueprint
+## 🚀 Execution Guide
+Run the evaluation scripts directly from your console.
 
-The source matrix is divided into distinct operational scripts mapping onto the core chapters of the implementation manuscript:
-
-### 1. `ai_model_trainer.py` (Core Infrastructure Module)
-* **Manuscript Reference:** Section V-A (Decoupled Off-Chain Web Layer Infrastructure).
-* **Functionality:** Implements the production-level `AIModelTrainer` class. It manages user behavioral telemetry profiling, automates background Isolation Forest clustering over a continuous 4-dimensional space, handles secure file-system serialization (`.pkl`), and calculates live contextual risk deductions.
-* **Feature Vector Layout (n=4 continuous metrics):** 
-  x = [x_{\text{time}}, x_{\text{ip}}, x_{\text{device}}, x_{\text{inactivity}}]
-
-### 2. `benchmark_tables.py` (Empirical Evaluation Suite)
-* **Manuscript Reference:** Section V-B (Performance Verification & Ablation Analysis).
-* **Functionality:** The primary validation execution script. It generates a high-fidelity synthetic database of N=10,000 sequential banking logs to profile standard user routines. It then benchmarks the proposed dynamic framework against a rigid, hand-tuned static baseline across two stress-test scenarios:
-  * **Scenario A (Benign Behavioral Drift):** Legitimate corporate users shifting transaction vectors slightly outside traditional operational windows.
-  * **Scenario B (Multi-Vector Threat Injection):** Coordinated brute-force, device-spoofing, and session-hijacking attacks.
-* **Outputs:** Automatically computes the raw data arrays, False Positive Rates (FPR), False Negative Rates (FNR), and execution latencies required to populate **Table I** and **Table II**.
 
 ---
 
@@ -48,7 +40,7 @@ The source matrix is divided into distinct operational scripts mapping onto the 
 To trigger the automated cross-validation loops and reproduce the manuscript's comparative data matrices, run the integrated evaluation engine:
 
 ```bash
-python benchmark_tables.py
+python benchmarks.py
 ```
 
 ### Expected Console Output Architecture
