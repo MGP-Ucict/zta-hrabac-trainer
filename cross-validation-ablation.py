@@ -9,7 +9,7 @@ np.random.seed(42)
 N_total_clean = 10000
 
 print("=" * 90)
-print(" INTEGRATED EXPERIMENTAL ENGINE: GENERATING MANUSCRIPT REVISION DATA")
+print(" INTEGRATED EXPERIMENTAL ENGINE: GENERATING DATA")
 print("=" * 90)
 print("[INFO] Simulating 10,000 baseline clean logs for user profile...")
 
