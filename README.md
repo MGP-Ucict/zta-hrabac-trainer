@@ -29,11 +29,6 @@ pip install numpy scikit-learn joblib
 - **`cross-validation-ablation.py`**: Executes evaluation loops across sliding historical window sizes.
 - **`comparison.py`**: Measures runtime ingestion latencies.
 
-## 🚀 Execution Guide
-Run the evaluation scripts directly from your console.
-
-
----
 
 ## 🚀 Execution Guide & Reproducibility Pipeline
 
