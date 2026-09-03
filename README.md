@@ -46,7 +46,6 @@ python benchmarks.py
 ### Expected Console Output Architecture
 Upon successful execution, the pipeline handles sequential data generation and outputs clean statistical results directly matching your validation drafts:
 
-=====
 
 ![Runned tests output](./image.png)
 
@@ -54,12 +53,12 @@ Upon successful execution, the pipeline handles sequential data generation and o
 
 The dynamic penalty scoring evaluated inside `evaluate_ai_system()` directly satisfies the algebraic constraints established below **Definition 2** in the text:
 
-$$W_j(x_j) = \text{int}\left( \max\left(0, \min\left(50, \, \left\vert{} \frac{x_j - \mu_j}{\sigma_j + \epsilon} \right\vert{} \cdot \gamma_j \right)\right) \right)$$
+$$eval(cond_i) = \text{int}\left( \max\left(0, \min\left(50, \left\vert{} \frac{cond_i - \mu_i}{\sigma_i + \epsilon} \right\vert{} \cdot \gamma_i \right)\right) \right)$$
 
 Where:
-* $\mu_j$ and $\sigma_j$ represent the moving statistical invariants computed across the sliding profile window.
+* $\mu_i$ and $\sigma_i$ represent the moving statistical invariants computed across the sliding profile window.
 * $\epsilon = 10^{-6}$ acts as the regularization guard against zero-division errors.
-* $\gamma_j$ isolates institutional scaling coefficients ($\gamma_{\text{time}}=10$, $\gamma_{\text{location}}=15$, $\gamma_{\text{device}}=12$, $\gamma_{\text{inactivity}}=8$) manipulated dynamically via the Policy Management Point (PMP) to optimize boundary definitions under volatile operational threat levels.
+* $\gamma_i$ isolates institutional scaling coefficients ($\gamma_{\text{time}}=10$, $\gamma_{\text{location}}=15$, $\gamma_{\text{device}}=12$, $\gamma_{\text{inactivity}}=8$) manipulated dynamically via the Policy Management Point (PMP) to optimize boundary definitions under volatile operational threat levels.
 
 
 
