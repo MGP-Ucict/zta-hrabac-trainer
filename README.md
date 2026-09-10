@@ -27,7 +27,7 @@ pip install numpy scikit-learn joblib
 - **`benchmarks.py`**: Generates synthetic banking logs.
 - **`accuracy.py`**: Evaluates standard classification matrices.
 - **`cross-validation-ablation.py`**: Executes evaluation loops across sliding historical window sizes.
-- **`comparison.py`**: Measures runtime ingestion latencies.
+
 
 
 ## 🚀 Execution Guide & Reproducibility Pipeline
